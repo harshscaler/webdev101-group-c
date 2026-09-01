@@ -5,43 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>CSS Selectors</title>
-
+    <!-- {} , [] , () -->
     <style>
         
         /* 1. Universal Selector */
-
+        * {
+            margin : 0px;
+            padding: 0px; 
+             box-sizing: border-box; /* Default value */
+        }
 
         /* 2. Type Selector */
+        p {
+            background-color: aqua;
+        }
 
 
         /* 3. Class Selector */
-
+        .container {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
 
         /* 4. ID Selector */
-
+        #highlight {
+            background-color: yellow;
+        }
 
         /* 5. Attribute Selector */
-
+        input[type="text"] {
+            border: 10px solid blue;
+        }
 
         /* 6. Descendant Selector */
-
+        div p {
+            color: red;
+            background-color: yellow;
+        }
 
         /* 7. Child Selector */
-
+        div > p {
+            color: green;
+            background-color: pink;
+        }
 
         /* 8. Adjacent Sibling Selector */
-
+        div + p {
+            color: black;
+            background-color: white;
+        }
 
         /* 9. General Sibling Selector */
-
+        /* TODO */
 
         /* 10. Pseudo-class Selector */
-
+        button:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
 
         /* 11. Pseudo-element Selector */
-
+        /* TODO */
 
         /* 12. Grouping Selector */
+        h1, h2, p {
+            background-color: lightgray;
+        }
 
     </style>
 </head>
@@ -56,7 +86,7 @@
 
 
     <!-- 3. Class Selector -->
-    <div class="container">
+    <div class="container container2">
         <h2>Container</h2>
         <p>This paragraph is inside the container.</p>
 
@@ -68,7 +98,7 @@
 
 
     <!-- 4. ID Selector -->
-    <span id="highlight">
+    <span class="container2" id="highlight">
         This is a span with an ID.
     </span>
 

@@ -5,3 +5,11 @@ p {
 h2 {
     color: red !important;
 }
+
+h5 {
+    color : blue;
+}
+
+h5{
+    color: green;
+}

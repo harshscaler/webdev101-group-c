@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal</title>
+
+    <style>
+        /* Element selector */
+        body {
+            background-color: #f5f5f5;
+        }
+
+        /* Element selector */
+        h1 {
+            color: #1d4ed8;
+        }
+
+        /* Element selector */
+        h2 {
+            color: #166534;
+        }
+
+        /* Class selector */
+        .highlight {
+            color: #b45309;
+        }
+
+        /* ID selector */
+        #student-name {
+            color: #7c3aed;
+        }
+
+        /* Bonus badge */
+        .badge {
+            color: white;
+            background-color: #16a34a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Student Portal</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#courses">Courses</a>
+            <a href="#register">Register</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ============================== -->
+        <!-- STUDENT PROFILE -->
+        <!-- ============================== -->
+
+        <section id="profile">
+
+            <h2>Student Profile</h2>
+
+            <p>
+                Student Name:
+                <strong id="student-name">Rahul Sharma</strong>
+                <span class="badge">Top Performer</span>
+            </p>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>Rahul Sharma</td>
+                    </tr>
+
+                    <tr>
+                        <td>Student ID</td>
+                        <td>24BCE1001</td>
+                    </tr>
+
+                    <tr>
+                        <td>Program</td>
+                        <td class="highlight">Computer Science</td>
+                    </tr>
+
+                    <tr>
+                        <td>Year</td>
+                        <td>1st Year</td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td>rahul@example.com</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- SKILLS -->
+        <!-- ============================== -->
+
+        <section>
+
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- WEEKLY SCHEDULE -->
+        <!-- ============================== -->
+
+        <section>
+
+            <h2>Weekly Schedule</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>9:00 AM</th>
+                        <th>11:00 AM</th>
+                        <th>2:00 PM</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                        <td>Mathematics</td>
+                        <td>DSA</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>CSS</td>
+                        <td>DBMS</td>
+                        <td>English</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>JavaScript</td>
+                        <td>DSA</td>
+                        <td>Mathematics</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>DBMS</td>
+                        <td>HTML</td>
+                        <td>Project</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>DSA</td>
+                        <td>CSS</td>
+                        <td>Workshop</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- ============================== -->
+        <!-- COURSE REGISTRATION -->
+        <!-- ============================== -->
+
+        <section id="register">
+
+            <h2>Course Registration</h2>
+
+            <form>
+
+                <!-- Student Information -->
+
+                <fieldset>
+
+                    <legend>Student Information</legend>
+
+                    <div>
+                        <label for="name">Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                        >
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                        >
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="student-id">Student ID:</label>
+                        <input
+                            type="text"
+                            id="student-id"
+                            name="student-id"
+                            placeholder="Enter your student ID"
+                        >
+                    </div>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <!-- Course Selection -->
+
+                <fieldset>
+
+                    <legend>Course Selection</legend>
+
+                    <label for="course">Select Course:</label>
+
+                    <select id="course" name="course">
+
+                        <option value="">
+                            Select Course
+                        </option>
+
+                        <option value="html-css">
+                            HTML & CSS
+                        </option>
+
+                        <option value="javascript">
+                            JavaScript
+                        </option>
+
+                        <option value="python">
+                            Python
+                        </option>
+
+                        <option value="dsa">
+                            Data Structures
+                        </option>
+
+                        <option value="dbms">
+                            Database Management
+                        </option>
+
+                    </select>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <!-- Learning Mode -->
+
+                <fieldset>
+
+                    <legend>Preferred Learning Mode</legend>
+
+                    <input
+                        type="radio"
+                        id="online"
+                        name="learning-mode"
+                        value="online"
+                    >
+
+                    <label for="online">
+                        Online
+                    </label>
+
+
+                    <input
+                        type="radio"
+                        id="offline"
+                        name="learning-mode"
+                        value="offline"
+                    >
+
+                    <label for="offline">
+                        Offline
+                    </label>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <!-- Skills -->
+
+                <fieldset>
+
+                    <legend>Skills You Already Know</legend>
+
+                    <input
+                        type="checkbox"
+                        id="html"
+                        name="skills"
+                        value="html"
+                    >
+
+                    <label for="html">
+                        HTML
+                    </label>
+
+
+                    <input
+                        type="checkbox"
+                        id="css"
+                        name="skills"
+                        value="css"
+                    >
+
+                    <label for="css">
+                        CSS
+                    </label>
+
+
+                    <input
+                        type="checkbox"
+                        id="javascript"
+                        name="skills"
+                        value="javascript"
+                    >
+
+                    <label for="javascript">
+                        JavaScript
+                    </label>
+
+
+                    <input
+                        type="checkbox"
+                        id="python"
+                        name="skills"
+                        value="python"
+                    >
+
+                    <label for="python">
+                        Python
+                    </label>
+
+                </fieldset>
+
+
+                <br>
+
+
+                <!-- Form Buttons -->
+
+                <button type="submit">
+                    Submit
+                </button>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Student Portal
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

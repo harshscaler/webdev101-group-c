@@ -37,10 +37,6 @@ The final interface will contain:
 5. Quest Panel
 6. Footer
 
-Use the following image as your reference:
-
-![Flexbox Quest Reference](../images/flexbox-quest-reference.png)
-
 ---
 
 # Rules

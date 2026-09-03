@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: bisque;
+            height: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+
+        .a {
+            background-color: pink;
+        }
+
+        .b {
+            background-color: burlywood;
+        }
+
+        .c {
+            background-color: orangered;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-item a">A</div>
+        <div class="flex-item b">B</div>
+        <div class="flex-item c">C</div>
+    </div>
+</body>
+</html>

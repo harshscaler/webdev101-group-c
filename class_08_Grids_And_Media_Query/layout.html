@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 700px;
+            background-color: yellow;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 3fr 1fr;
+            gap: 2px;
+        }
+
+        .item {
+            border: 2px solid red;
+            border-radius: 5px;
+        }
+
+        .navbar , .footer {
+            grid-column: 1 / 4;
+            background-color: green;
+        }
+
+        .main {
+            grid-column: 2 / 4;
+            background-color: lightblue;
+        }
+
+        .sidebar {
+            grid-column: 1 / 2;
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item navbar">Navbar</div>
+        <div class="item sidebar">sidebar</div>
+        <div class="item main">main</div>
+        <div class="item footer">footer</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #263238;
+            background: #f4f7f5;
+        }
+
+        header {
+            padding: 3rem 1.5rem 2rem;
+            text-align: center;
+            background: #dcefe7;
+        }
+
+        h1 {
+            margin: 0 0 0.5rem;
+            color: #164a3a;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        figure {
+            margin: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 4px 14px rgba(22, 74, 58, 0.12);
+        }
+
+        figure:first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        figure:first-child img {
+            height: 100%;
+            min-height: 300px;
+        }
+
+        figcaption {
+            padding: 0.75rem 1rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                padding: 1rem 1rem 2rem;
+            }
+
+            figure:first-child {
+                grid-column: auto;
+                grid-row: auto;
+            }
+
+            figure:first-child img {
+                height: 220px;
+                min-height: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Dogs</h1>
+        <p>A small collection of four-legged friends</p>
+    </header>
+
+    <main class="gallery">
+        <figure>
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80" alt="Golden retriever sitting outdoors">
+            <figcaption>Golden hour</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=700&q=80" alt="Brown dog looking at the camera">
+            <figcaption>Curious eyes</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=700&q=80" alt="Black and white dog sitting on grass">
+            <figcaption>Best friend</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=700&q=80" alt="Small dog resting outside">
+            <figcaption>Taking a break</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=700&q=80" alt="Happy dog running through a field">
+            <figcaption>Run free</figcaption>
+        </figure>
+    </main>
+</body>
+</html>

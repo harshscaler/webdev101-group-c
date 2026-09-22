@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 40vh;
+            left: 40vw;
+            ;
+            background-color: black;
+            transition: animation 2s;
+            animation: move-box 5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes move-box {
+            0% {
+                background-color: aqua;
+                transform:
+                    scale(1.2) translate(30px, 20px);
+            }
+
+            25% {
+                background-color: greenyellow;
+                transform:
+                    scale(1.4) translate(60px, 40px);
+            }
+
+            50% {
+                background-color: rebeccapurple;
+                transform:
+                    scale(1.5) translate(80px, 60px);
+            }
+
+            75% {
+                background-color: red;
+                transform:
+                    scale(0.8) translate(-30px, -20px);
+            }
+
+            100% {
+                background-color: blue;
+                transform:
+                    scale(0.5) translate(30px, -20px);
+            }
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div></div>
+    <!-- <div></div> -->
+
+    <h1 class="text-3xl font-bold underline bg-red-900">
+      Hello world!
+    </h1>
+</body>
+
+</html>

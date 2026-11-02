@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1>This is the intro to DOM and BOM</h1>
+    <button id="btn">Click Me</button>
+     <script>
+        let button = document.getElementById("btn");
+        console.log(button);
+
+        button.addEventListener("click" , function() {
+            console.log("Button Clicked");
+
+            let body = document.querySelector("body");
+
+            let h2Element = document.createElement("h2");
+            h2Element.textContent = "This is a new h2 element";
+
+            body.appendChild(h2Element);
+        })
+    </script>
+</body>
+</html>

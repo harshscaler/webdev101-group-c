@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniCart</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 10px;
+            margin: 10px 0;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Mini Cart</h1>
+
+    <select class="product-selector" id="products">
+        <option value="all">Select all product</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="fruits">Fruits</option>
+        <option value="grains">Grains</option>
+    </select>
+
+    <div id="vegetables" class="product">
+        <h1>Vegetables</h1>
+        <p class="vegetable">Carrot</p>
+        <p class="vegetable">Potato</p>
+        <p class="vegetable">Onion</p>
+    </div>
+
+    <div id="fruits" class="product">
+        <h1>Fruits</h1>
+        <p class="fruit">Apple</p>
+        <p class="fruit">Banana</p>
+        <p class="fruit">Orange</p>
+    </div>
+
+    <div id="grains" class="product">
+        <h1>Grains</h1>
+        <p class="grain">Rice</p>
+        <p class="grain">Wheat</p>
+        <p class="grain">Barley</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

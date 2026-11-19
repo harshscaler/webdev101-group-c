@@ -1,0 +1,66 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+.timer {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.letter {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    min-width: 12px;
+}
+
+.input {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.4rem;
+    width: 450px;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.start, .end {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
